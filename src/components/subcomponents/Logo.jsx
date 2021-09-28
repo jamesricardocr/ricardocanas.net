@@ -1,16 +1,13 @@
 import React from 'react'
 import logoRicardo from '../../img/logoBlanco.png'
+import { Link } from 'react-router-dom'
+
 const Logo = () => {
 
-    const saludar = function (){
-        alert('Funciona')
-    }
     return ( 
-        <img 
-        src={logoRicardo} alt="ricardo cañas" 
-        className="logo"
-        onClick = {()=> saludar()}
-        />
+        <Link to="/">
+            <img src={logoRicardo} alt="ricardo cañas" className="logo" />
+        </Link>
      );
 }
  

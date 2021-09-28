@@ -1,21 +1,28 @@
 import React, {Fragment} from 'react';
 import {  BrowserRouter as Router,  Switch,  Route } from "react-router-dom";
 import Portafolio from './components/Portafolio';
-import Whatsapp from './components/Whatsapp';
 import Home from './components/Home';
+import logosti from './img/logosti.png'
+import Laborales from './components/Laborales';
+import Academicos from './components/Academicos';
+import Personales from './components/Personales';
+import Diseños from './components/Diseños';
+
 
 function App() {
   return (
     <Fragment>
-        <Router>
-        <Switch>
-          <Route exact path='/' component= {Home}/>
-          <Route exact path='/Portafolio' component= {Portafolio}/>
-          <Route exact path='/Whatsapp' component= {Whatsapp}/>
-          
+        <img className="logosti" src={logosti} alt="Logos tecnologias TI" />
 
-        </Switch>
-          
+        <Router>
+          <Switch>
+            <Route exact path='/' component= {Home}/>
+            <Route exact path='/Portafolio' component= {Portafolio}/>
+            <Route exact path='/Laborales' component= {Laborales}/>
+            <Route exact path='/Academicos' component= {Academicos}/>
+            <Route exact path='/Diseños' component= {Diseños}/>
+            <Route exact path='/Personales' component= {Personales}/>
+          </Switch>
         </Router>
 
     </Fragment>
