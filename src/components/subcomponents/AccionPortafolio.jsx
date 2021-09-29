@@ -11,7 +11,7 @@ const AccionPortafolio = () => {
       <div className="accion">
         <h1>Lorem isum dolor sit, amet consectetur adipisicing elit.</h1>
         <p 
-        className="Whatsapp whatsapp-portafolio" 
+        className="whatsapp-portafolio" 
         onClick={() => enviarWhatsapp()}>
         Whatsapp</p>
       </div>
