@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 
 
 const MostrarProyectos = ({proyecto}) => {
-   const {nombre, ulr, imagen, tecnologias, descripcion} = proyecto;
+   const {nombre, url, imagen, tecnologias, descripcion} = proyecto;
     console.log(tecnologias);
 
     return (
@@ -16,7 +16,7 @@ const MostrarProyectos = ({proyecto}) => {
                 <div className="datos-proyecto">
                     <h2 className="titulo-proyecto">{nombre}</h2>
                     <p className="descripcion">{descripcion}</p>
-                    <a className="link" href={ulr} target="_blank">Ver Proyecto</a>
+                    <a className="link" href={url} target="_blank">Ver Proyecto</a>
                     <div className="logos-proyecto">
                         {tecnologias.map(tecnologia =>(
                             <img src={tecnologia} alt="" />
