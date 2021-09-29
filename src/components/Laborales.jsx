@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 const Laborales = () => {
     return ( <h1>Desde Laborales</h1> );
 }

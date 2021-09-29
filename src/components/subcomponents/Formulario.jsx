@@ -5,7 +5,8 @@ const Formulario = () => {
             <form className="formulario-contacto">
                 <input type="email" placeholder="Email" />
                 <input type="number" placeholder="Whatsapp"/>
-                <input id="btn-enviar" type="submit" value="Enviar" />
+                <button id="btn-enviar">Enviar</button>
+                
             </form>
         </Fragment>
     );

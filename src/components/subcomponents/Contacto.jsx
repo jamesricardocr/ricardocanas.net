@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Formulario from './subcomponents/Formulario';
+import Formulario from './Formulario';
 
 const Contacto = () => {
     return ( 
