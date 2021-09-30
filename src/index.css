@@ -218,6 +218,7 @@ p {
 }
 
 .datos-proyecto h2{
+  margin: 0;
   color:#34bf98;
   font-size: 1rem;
   font-weight: 500;
@@ -225,6 +226,7 @@ p {
 
 .datos-proyecto p{
   font-size: 0.8rem;
+
 }
 
 .datos-proyecto a{

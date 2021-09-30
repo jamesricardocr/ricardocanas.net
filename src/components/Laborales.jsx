@@ -23,7 +23,7 @@ import react from "../img/logos-tecnologias/react.png";
 const Laborales = () => {
   const [proyectos, setProyectos] = useState([
     {
-      id: 5,
+      id: 6,
       nombre: "Jhon Guerrero",
       url: "https://johnguerreromusic.com",
       imagen: guerrero,
