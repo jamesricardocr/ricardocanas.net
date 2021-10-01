@@ -17,6 +17,7 @@ import citas from "../img/imagenes-proyectos/citas.jpg";
 import clientes from "../img/imagenes-proyectos/clientes.jpg";
 import canciones from "../img/imagenes-proyectos/canciones.png";
 import clima from "../img/imagenes-proyectos/clima.jpg";
+import imagenes from "../img/imagenes-proyectos/imagenes.png";
 
 
 // logos tecnologias
@@ -30,6 +31,14 @@ const Academicos = () => {
 
     const [proyectos, setProyectos] = useState([
 
+        {
+          id: 11,
+          nombre: "Buscador de imagenes",
+          url: "https://jamesricardocr.github.io/academic-javascript/10-PROYECTO-BuscarCanciones/",
+          imagen: imagenes,
+          descripcion: "Implementando y consultando la API de Pixabay",
+          tecnologias: [html, css, javascript],
+        },
         {
           id: 10,
           nombre: "Buscador de canciones",

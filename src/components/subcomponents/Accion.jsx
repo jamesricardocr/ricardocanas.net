@@ -15,12 +15,12 @@ const Accion = () => {
                 <div className="botones">
                 
                 <p 
-                className="Whatsapp" 
+                className="Whatsapp redes animate__animated animate__pulse" 
                 onClick = {()=> enviarWhatsapp()}
                 >Whatsapp</p>
         
                 <Link 
-                className="Portafolio" 
+                className="Portafolio redes animate__animated animate__pulse" 
                 to ="/Portafolio" 
                 >Portafolio</Link>
                 </div>

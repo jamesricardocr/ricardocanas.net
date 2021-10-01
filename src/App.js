@@ -1,5 +1,7 @@
 import React, {Fragment} from 'react';
 import {  BrowserRouter as Router,  Switch,  Route } from "react-router-dom";
+import "animate.css";
+
 import Portafolio from './components/Portafolio';
 import Home from './components/Home';
 import logosti from './img/logosti.png'

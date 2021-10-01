@@ -3,13 +3,14 @@ import React, { Fragment } from 'react';
 
 
 const MostrarProyectos = ({proyecto}) => {
+
    const {nombre, url, imagen, tecnologias, descripcion} = proyecto;
 
-
+    
     return (
          
         <Fragment>
-            <div className="proyectos">
+            <div className="proyectos animate__animated animate__fadeIn">
                 <div className="imagen-proyecto">
                     <a className="link" href={url} target="_blank"><img src={imagen} alt="" /></a> 
                 </div>

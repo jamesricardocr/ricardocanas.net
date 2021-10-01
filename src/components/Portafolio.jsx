@@ -17,19 +17,19 @@ const Portfolio = () => {
           </p>
         </div>
         <div className="btn-portafolio">
-          <Link className="laborales" to="/Laborales">
+          <Link className="laborales animate__animated animate__pulse" to="/Laborales">
             Laborales
           </Link>
 
-          <Link className="academicos" to="/Academicos">
+          <Link className="academicos animate__animated animate__pulse" to="/Academicos">
             Academicos
           </Link>
 
-          <Link className="personales" to="/Personales">
+          <Link className="personales animate__animated animate__pulse" to="/Personales">
             Personales
           </Link>
 
-          <Link className="diseños" to="/Diseños">
+          <Link className="diseños animate__animated animate__pulse" to="/Diseños">
             Diseños
           </Link>
         </div>

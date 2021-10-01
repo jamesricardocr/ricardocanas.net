@@ -11,13 +11,13 @@ const Redes = () => {
 
     return ( 
         <Fragment>
-            <div className="redes">
-            <img src={facebook} alt="icono facebook" />
-            <img src={github} alt="icono github" />
-            <img src={instagram} alt="icono instagram" />
-            <img src={linkedin} alt="icono linkedin" />
-            <img src={twitter} alt="icono twitter" />
-            <img src={whatsapp} alt="icono whatsapp" />
+            <div className="redes animate__animated animate__pulse">
+            <img className="" src={facebook} alt="icono facebook" />
+            <img className="" src={github} alt="icono github" />
+            <img className="" src={instagram} alt="icono instagram" />
+            <img className="" src={linkedin} alt="icono linkedin" />
+            <img className="" src={twitter} alt="icono twitter" />
+            <img className="" src={whatsapp} alt="icono whatsapp" />
             </div>
         </Fragment>
      );
