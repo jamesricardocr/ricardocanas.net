@@ -12,7 +12,7 @@ const MostrarProyectos = ({proyecto}) => {
         <Fragment>
             <div className="proyectos animate__animated animate__fadeIn">
                 <div className="imagen-proyecto">
-                    <a className="link" href={url} target="_blank"><img src={imagen} alt="" /></a> 
+                    <a className="link" href={imagen} target="_blank"><img src={imagen} alt="" /></a> 
                 </div>
                 <div className="datos-proyecto">
                     <a className="link" href={url} target="_blank"><h2 className="titulo-proyecto">{nombre}</h2></a>
