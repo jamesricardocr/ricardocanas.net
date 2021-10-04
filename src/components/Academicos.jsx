@@ -18,6 +18,10 @@ import clientes from "../img/imagenes-proyectos/clientes.jpg";
 import canciones from "../img/imagenes-proyectos/canciones.png";
 import clima from "../img/imagenes-proyectos/clima.jpg";
 import imagenes from "../img/imagenes-proyectos/imagenes.png";
+import cafe from "../img/imagenes-proyectos/cafe.png";
+import bienes from "../img/imagenes-proyectos/bienes.png";
+import cripto from "../img/imagenes-proyectos/cripto.jpg";
+import paciente from "../img/imagenes-proyectos/paciente.jpg";
 
 
 // logos tecnologias
@@ -31,6 +35,22 @@ const Academicos = () => {
 
     const [proyectos, setProyectos] = useState([
 
+        {
+          id: 15,
+          nombre: "Administrador de citas",
+          url: "https://jamesricardocr.github.io/academic-javascript/10-PROYECTO-BuscarCanciones/",
+          imagen: paciente,
+          descripcion: "administrador de pacientes.",
+          tecnologias: [react, css, javascript],
+        },
+        {
+          id: 14,
+          nombre: "Criptomonedas",
+          url: "https://jamesricardocr.github.io/academic-javascript/10-PROYECTO-BuscarCanciones/",
+          imagen: cripto,
+          descripcion: "Cotizador de criptomonedas API",
+          tecnologias: [html, css, javascript],
+        },
         {
           id: 11,
           nombre: "Buscador de imagenes",
@@ -117,6 +137,22 @@ const Academicos = () => {
           url: "https://jamesricardocr.github.io/academic-javascript/1-PROYECTO-Carrito%20localStorage/",
           imagen: carrito,
           descripcion: "Carrito de compras con local storage",
+          tecnologias: [html, css, javascript],
+        },
+        {
+          id: 13,
+          nombre: "Bienes raices",
+          url: "https://jamesricardocr.github.io/HTML-CSS/proyecto-finca-raiz/",
+          imagen: bienes,
+          descripcion: "Sitio web creado con HTML y CSS",
+          tecnologias: [html, css, javascript],
+        },
+        {
+          id: 12,
+          nombre: "Blog café",
+          url: "https://jamesricardocr.github.io/HTML-CSS/proyecto-cafe/",
+          imagen: cafe,
+          descripcion: "Sitio web creado con HTML y CSS",
           tecnologias: [html, css, javascript],
         }
       ]);
