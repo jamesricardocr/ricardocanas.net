@@ -11,6 +11,7 @@ import conde from "../img/imagenes-proyectos/conde.png";
 import imaqcol from "../img/imagenes-proyectos/imaqcol.png";
 import inner from "../img/imagenes-proyectos/inner.png";
 import guerrero from "../img/imagenes-proyectos/guerrero.png";
+import ana from "../img/imagenes-proyectos/ana.png";
 
 // logos tecnologias
 import css from "../img/logos-tecnologias/css.png";
@@ -54,14 +55,14 @@ const Laborales = () => {
       descripcion: "Landing page, de una cadena de droguerias.",
       tecnologias: [wordpress, javascript,css],
     },
-    // {
-    //   id: 2,
-    //   nombre: "Ana Leal Design",
-    //   url: "https://drogueriacondeplus.com/",
-    //   imagen: conde,
-    //   descripcion: "Landing page, de una cadena de droguerias.",
-    //   tecnologias: [wordpress, javascript],
-    // },
+    {
+      id: 2,
+      nombre: "Ana Leal Design",
+      url: "https://ana.ricardocanas.net/",
+      imagen: ana,
+      descripcion: "Sitio web de la diseñadora Ana Leal",
+      tecnologias: [wordpress, javascript],
+    },
     {
       id: 1,
       nombre: "Tacticos Jhon",
