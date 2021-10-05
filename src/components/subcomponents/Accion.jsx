@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom';
 
 
-const Accion = () => {
+const Accion = ({mensajePrincipal, mensajeSecundario}) => {
 
     const enviarWhatsapp = function(){
         window.open('https://wa.me/573232923238', '_blank');
@@ -10,8 +10,8 @@ const Accion = () => {
     return ( 
         <Fragment>
             <div className="accion">
-                <h1>Lorem isum dolor sit, amet consectetur adipisicing elit.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eum iure placeat, quis soluta quibusdam temporibus. Qui sequi id obcaecati.</p>
+                <h1>{mensajePrincipal}</h1>
+                <p>{mensajeSecundario}</p>
                 <div className="botones">
                 
                 <p 

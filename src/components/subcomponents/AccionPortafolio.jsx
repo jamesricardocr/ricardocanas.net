@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-const AccionPortafolio = () => {
+const AccionPortafolio = ({mensaje}) => {
 
   const enviarWhatsapp = function () {
     window.open("https://wa.me/573232923238", "_blank");
@@ -9,7 +9,7 @@ const AccionPortafolio = () => {
   return (
     <Fragment>
       <div className="accion">
-        <h1>Lorem isum dolor sit, amet consectetur adipisicing elit.</h1>
+        <h1 className = "titulo-accion-portafolio">{mensaje}</h1>
         <p 
         className="whatsapp-portafolio" 
         onClick={() => enviarWhatsapp()}>

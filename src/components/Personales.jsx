@@ -68,10 +68,11 @@ const Personales = () => {
     },
   ]);
 
+  const mensaje = "En esta sección encuentras todos mis proyectos personales.";
   return (
     <Fragment>
       <Logo/>
-      <AccionPortafolio/>
+      <AccionPortafolio mensaje={mensaje} />
       {proyectos.map((proyecto) => (
         <MostrarProyectos key={proyecto.id} proyecto={proyecto} />
       ))}

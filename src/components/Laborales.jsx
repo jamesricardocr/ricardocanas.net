@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
 // componentes
 import MostrarProyectos from "./subcomponents/MostrarProyectos";
-import Logo from './subcomponents/Logo';
+import Logo from "./subcomponents/Logo";
 import AccionPortafolio from "./subcomponents/AccionPortafolio";
-import Redes from "./subcomponents/Redes"
+import Redes from "./subcomponents/Redes";
 
 // imagenes de los proyectos
 import tacticos from "../img/imagenes-proyectos/tacticosJhon.png";
@@ -29,7 +29,7 @@ const Laborales = () => {
       url: "https://johnguerreromusic.com",
       imagen: guerrero,
       descripcion: "Sitio Web personal de un maestro y artista musical. ",
-      tecnologias: [react, javascript,css],
+      tecnologias: [react, javascript, css],
     },
     {
       id: 5,
@@ -44,7 +44,8 @@ const Laborales = () => {
       nombre: "Imaqcol",
       url: "https://imaqcol.com/",
       imagen: imaqcol,
-      descripcion: "Ecommerce de la empresa de ingenieria de maquinas de Colombia",
+      descripcion:
+        "Ecommerce de la empresa de ingenieria de maquinas de Colombia",
       tecnologias: [wordpress, javascript, css],
     },
     {
@@ -53,7 +54,7 @@ const Laborales = () => {
       url: "https://drogueriacondeplus.com/",
       imagen: conde,
       descripcion: "Landing page, de una cadena de droguerias.",
-      tecnologias: [wordpress, javascript,css],
+      tecnologias: [wordpress, javascript, css],
     },
     {
       id: 2,
@@ -73,15 +74,16 @@ const Laborales = () => {
     },
   ]);
 
+  const mensaje = "En esta sección encuentras todos mis proyectos laborales.";
   return (
     <Fragment>
-      <Logo/>
-      <AccionPortafolio/>
+      <Logo />
+      <AccionPortafolio mensaje={mensaje} />
       {proyectos.map((proyecto) => (
         <MostrarProyectos key={proyecto.id} proyecto={proyecto} />
       ))}
       <br />
-      <Redes/>
+      <Redes />
     </Fragment>
   );
 };

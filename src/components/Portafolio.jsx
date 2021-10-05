@@ -7,29 +7,40 @@ const Portfolio = () => {
   return (
     <Fragment>
       <div className="container">
-      <Logo />
+        <Logo />
         <div className="accion">
-          <h1>Lorem isum dolor sit, amet consectetur adipisicing elit.</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-            eum iure placeat, quis soluta quibusdam temporibus. Qui sequi id
-            obcaecati.
+          <h1>¿Quieres conocer mi trayectoria como desarrollador web?</h1>
+          <p className="portafolio-parrafo">
+            Haciendo clic sobre cada opción, encontrarás los proyectos que he
+            realizado hasta la fecha.
           </p>
         </div>
         <div className="btn-portafolio">
-          <Link className="laborales animate__animated animate__pulse" to="/Laborales">
+          <Link
+            className="laborales animate__animated animate__pulse"
+            to="/Laborales"
+          >
             Laborales
           </Link>
 
-          <Link className="academicos animate__animated animate__pulse" to="/Academicos">
-            Academicos
+          <Link
+            className="academicos animate__animated animate__pulse"
+            to="/Academicos"
+          >
+            Académicos
           </Link>
 
-          <Link className="personales animate__animated animate__pulse" to="/Personales">
+          <Link
+            className="personales animate__animated animate__pulse"
+            to="/Personales"
+          >
             Personales
           </Link>
 
-          <Link className="diseños animate__animated animate__pulse" to="/Diseños">
+          <Link
+            className="diseños animate__animated animate__pulse"
+            to="/Diseños"
+          >
             Diseños
           </Link>
         </div>

@@ -10,7 +10,7 @@ const MostrarProyectos = ({proyecto}) => {
     return (
          
         <Fragment>
-            <div className="proyectos animate__animated animate__fadeIn">
+            <div className="proyectos animate__animated animate__slideInLeft">
                 <div className="imagen-proyecto">
                     <a className="link" href={imagen} target="_blank"><img src={imagen} alt="" /></a> 
                 </div>
