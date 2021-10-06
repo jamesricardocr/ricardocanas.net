@@ -38,7 +38,7 @@ const Academicos = () => {
         {
           id: 15,
           nombre: "Administrador de citas",
-          url: "https://jamesricardocr.github.io/academic-javascript/10-PROYECTO-BuscarCanciones/",
+          url: "https://cocky-heyrovsky-cf7ed8.netlify.app/",
           imagen: paciente,
           descripcion: "administrador de pacientes.",
           tecnologias: [react, css, javascript],
@@ -46,7 +46,7 @@ const Academicos = () => {
         {
           id: 14,
           nombre: "Criptomonedas",
-          url: "https://jamesricardocr.github.io/academic-javascript/10-PROYECTO-BuscarCanciones/",
+          url: "https://nostalgic-euclid-6327ae.netlify.app/",
           imagen: cripto,
           descripcion: "Cotizador de criptomonedas API",
           tecnologias: [html, css, javascript],
@@ -54,7 +54,7 @@ const Academicos = () => {
         {
           id: 11,
           nombre: "Buscador de imagenes",
-          url: "https://jamesricardocr.github.io/academic-javascript/10-PROYECTO-BuscarCanciones/",
+          url: "https://jamesricardocr.github.io/academic-javascript/11-PROYECTO-PixabayImagenes/",
           imagen: imagenes,
           descripcion: "Implementando y consultando la API de Pixabay",
           tecnologias: [html, css, javascript],

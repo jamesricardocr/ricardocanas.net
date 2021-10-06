@@ -9,7 +9,7 @@ const Redes = () => {
     const redesSociales = ["linkedin", "gitHub", "instagram", "whatsapp"];
 
     if (redSocial === redesSociales[0]) {
-      window.open("https://www.linkedin.com/in/james-ricardo-ca%C3%B1as-reales-29b639133", "_blank");
+      window.open("https://www.linkedin.com/in/jamesricardocr/", "_blank");
     } else if (redSocial === redesSociales[1]) {
       window.open("https://github.com/jamesricardocr", "_blank");
     } else if (redSocial === redesSociales[2]) {

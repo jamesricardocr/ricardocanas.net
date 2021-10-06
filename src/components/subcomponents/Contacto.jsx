@@ -4,7 +4,7 @@ import Formulario from './Formulario';
 const Contacto = () => {
     return ( 
         <Fragment>
-        <div className="contacto">
+        <div id="contacto" className="contacto">
             <h2>Contacto</h2>
             <Formulario/>
             {/* <Redes/> */}

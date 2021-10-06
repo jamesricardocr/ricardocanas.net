@@ -1,4 +1,10 @@
+/* --------------------------------- imports --------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+/* -------------------------------------------------------------------------- */
+/*                                  Globales                                  */
+/* -------------------------------------------------------------------------- */
+
 html {
   margin: 0 auto;
   padding: 0;
@@ -26,14 +32,21 @@ p {
   line-height: 1.5;
 }
 
-/* SUBCOMPONENTES ############################### */
+/* -------------------------------------------------------------------------- */
+/*                               SUBCOMPONENTES                               */
+/* -------------------------------------------------------------------------- */
 
+/* ---------------------------------- Logo ---------------------------------- */
 .logo {
   margin: 1rem auto 1rem auto;
   display: block;
   width: 80%;
 }
-
+@media (min-width: 768px) {
+  .logo {
+    width: 80%;
+  }
+}
 .logosti {
   position: absolute;
   left: 85%;
@@ -41,24 +54,64 @@ p {
   z-index: 5;
   display: none;
 }
+/* ---------------------------------- Menu ---------------------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.menu {
+  display: none;
+  width: 40%;
+}
+.menu-listado {
+  display: flex;
+  gap: 1rem;
+}
+.menu-listado li {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin: 1.5rem;
+  }
+  .menu {
+    display: inline;
+  }
+  .header a {
+    width: 60%;
+  }
+  .menu-listado li {
+  }
+  .menu-listado li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  .menu-listado li a::before {
+    padding: 0.5rem;
+    background-color: #f19580;
+  }
+}
+
+/* ---------------------------------- Redes --------------------------------- */
 .redes {
   width: 80%;
   margin: 1.5rem auto;
   display: flex;
   justify-content: space-around;
 }
-
-.whatsapp-portafolio {
-  background-color: #34bf98;
-  padding: 0.5rem;
-  width: 50%;
-  text-align: center;
-  border-radius: 1rem;
-  margin-left: 50%;
-  font-weight: 500;
+@media (min-width: 768px) {
+  .redes {
+    width: 50%;
+  }
+  .redes img {
+    width: 2.5rem;
+  }
 }
-/* ACCION ##################################### */
+/* --------------------------------- Accion --------------------------------- */
 .accion {
   margin: 0 auto;
   width: 75%;
@@ -66,11 +119,7 @@ p {
   flex-direction: column;
 }
 
-.portafolio-parrafo {
-  font-size: 18px;
-}
-
-.titulo-accion-portafolio{
+.titulo-accion-portafolio {
   font-weight: 100;
   font-size: 1.51rem;
 }
@@ -101,13 +150,26 @@ p {
 .Whatsapp {
   background-color: #34bf98;
   cursor: pointer;
+  line-height: 2;
 }
 
+/* Este es el boton portafolio del home*/
 .Portafolio {
+  line-height: 2;
   background-color: #f19580;
 }
 
-/* CONTACTO ########################## */
+.whatsapp-portafolio {
+  background-color: #34bf98;
+  padding: 0.5rem;
+  width: 50%;
+  text-align: center;
+  border-radius: 1rem;
+  margin-left: 50%;
+  font-weight: 500;
+}
+
+/* -------------------------------- CONTACTO -------------------------------- */
 /* importante con los pading en los tipo submit y los botones funciona diferente */
 .contacto h2 {
   margin: 1.2rem 0 1rem 0;
@@ -140,54 +202,26 @@ p {
 #btn-enviar {
   border: solid 0.1rem #34bf98;
   margin-bottom: 2rem;
-
   width: 100%;
 }
 
-/* PORTAFOLIO ############################# */
-.container {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  .contacto h2 {
+    font-size: 2.5rem;
+  }
+  .formulario-contacto,
+  .formulario-contacto input {
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+  .formulario-contacto input {
+    border: solid 2px #f19580;
+  }
+  #btn-enviar {
+    border: solid 2px #34bf98;
+  }
 }
-
-.btn-portafolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem auto;
-  width: 80%;
-  text-align: center;
-}
-
-.laborales,
-.academicos,
-.personales,
-.diseños {
-  font-weight: 500;
-  margin: 1rem 0.5rem;
-  padding: 1rem 0;
-  cursor: pointer;
-  width: 80%;
-  background-color: #1c1e27;
-}
-
-.academicos,
-.diseños {
-  background-color: #1c1e27;
-  border: solid 1px #34bf98;
-  color: #34bf98;
-}
-
-.laborales,
-.personales {
-  border: solid 1px #f19580;
-  color: #f19580;
-}
-
-/* MOSTRAR PROYECTOS ################################ */
+/* ---------------------------- MOSTRAR PROYECTOS --------------------------- */
 
 .proyectos {
   margin: 1.5rem auto;
@@ -249,4 +283,124 @@ p {
 
 .logos-proyecto img {
   width: 20%;
+}
+
+@media (min-width: 768px) {
+  .logos-proyecto img {
+    width: 15%;
+  }
+  .datos-proyecto h2 {
+    font-size: 1.5rem;
+  }
+
+  .datos-proyecto p {
+    font-size: 1.1rem;
+  }
+  .imagen-proyecto {
+    width: 70%;
+    height: 12rem;
+  }
+
+  .imagen-proyecto img {
+    width: 100%;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                                    HOME                                    */
+/* -------------------------------------------------------------------------- */
+
+.main-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-imagen-principal {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./img/fondoDesktop.png");
+    background-size: contain;
+    background-repeat: repeat;
+  }
+  .main-home {
+    padding: 0 4rem;
+  }
+  .home-imagen-principal {
+    display: block;
+    width: 50%;
+    opacity: 60%;
+  }
+  .accion {
+    width: 50%;
+  }
+  .accion h1 {
+    font-size: 2rem;
+  }
+  .accion p {
+    font-size: 1rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 PORTAFOLIO                                 */
+/* -------------------------------------------------------------------------- */
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portafolio-parrafo {
+  font-size: 18px;
+}
+
+.btn-portafolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  width: 80%;
+  text-align: center;
+}
+
+.laborales,
+.academicos,
+.personales,
+.diseños {
+  font-weight: 500;
+  margin: 1rem 0.5rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  width: 80%;
+  background-color: #1c1e27;
+}
+
+.academicos,
+.diseños {
+  background-color: #1c1e27;
+  border: solid 1px #34bf98;
+  color: #34bf98;
+}
+
+.laborales,
+.personales {
+  border: solid 1px #f19580;
+  color: #f19580;
+}
+
+@media (min-width: 768px) {
+  .btn-portafolio {
+    width: 50%;
+  }
+  .accion-portafolio h1 {
+    font-size: 2.7rem;
+  }
+  .accion-portafolio p {
+    font-size: 1.5rem;
+  }
 }
