@@ -10,7 +10,8 @@ const AccionPortafolio = ({mensaje}) => {
     <Fragment>
       <div className="accion">
         <h1 className = "titulo-accion-portafolio">{mensaje}</h1>
-        <p 
+        <p
+        id="whatsapp-portafolio"
         className="whatsapp-portafolio" 
         onClick={() => enviarWhatsapp()}>
         Whatsapp</p>

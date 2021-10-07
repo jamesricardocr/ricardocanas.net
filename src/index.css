@@ -47,6 +47,7 @@ p {
     width: 80%;
   }
 }
+
 .logosti {
   position: absolute;
   left: 85%;
@@ -83,8 +84,7 @@ p {
   .header a {
     width: 60%;
   }
-  .menu-listado li {
-  }
+
   .menu-listado li a {
     font-size: 1.1rem;
     text-decoration: none;
@@ -96,6 +96,32 @@ p {
   }
 }
 
+@media (min-width: 1279px) {
+  .header {
+    margin: 1.5rem;
+  }
+  .menu {
+    display: inline;
+  }
+  .header a {
+    width: 30%;
+  }
+  .menu-listado li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s all;
+    text-align: center;
+  }
+  .menu-listado li a:hover {
+    padding: 0.6rem;
+    background-color: #4d2559;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 0.6rem;
+    font-size: 1.1rem;
+  }
+}
 /* ---------------------------------- Redes --------------------------------- */
 .redes {
   width: 80%;
@@ -111,6 +137,21 @@ p {
     width: 2.5rem;
   }
 }
+
+@media (min-width: 1279px) {
+  .redes {
+    width: 30%;
+  }
+  .redes img {
+    width: 2.5rem;
+    transition: 1s all;
+    cursor: pointer;
+  }
+  .redes img:hover {
+    transform: scale(1.5);
+  }
+}
+
 /* --------------------------------- Accion --------------------------------- */
 .accion {
   margin: 0 auto;
@@ -169,6 +210,33 @@ p {
   font-weight: 500;
 }
 
+@media (min-width: 768px) {
+  #whatsapp-portafolio {
+    width: 70%;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1279px) {
+  .Whatsapp,
+  .Portafolio {
+    width: 40%;
+    line-height: 2;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.3rem;
+    transition: 1s all;
+  }
+  .Whatsapp:hover,
+  .Portafolio:hover {
+    background-color: #4d2559;
+    color: #fff;
+    
+  }
+
+  /* Este es el boton portafolio del home*/
+}
+
 /* -------------------------------- CONTACTO -------------------------------- */
 /* importante con los pading en los tipo submit y los botones funciona diferente */
 .contacto h2 {
@@ -219,6 +287,31 @@ p {
   }
   #btn-enviar {
     border: solid 2px #34bf98;
+  }
+}
+
+@media (min-width: 1279px) {
+  .contacto {
+    margin: 3rem 0;
+  }
+  .contacto h2 {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+  .formulario-contacto,
+  .formulario-contacto input {
+    width: 25rem;
+    font-size: 1.2rem;
+  }
+  .formulario-contacto input {
+    border: solid 2px #f19580;
+  }
+  #btn-enviar {
+    border: solid 2px #34bf98;
+    transition: 1s all;
+  }
+  #btn-enviar:hover {
+    transform: scale(1.05);
   }
 }
 /* ---------------------------- MOSTRAR PROYECTOS --------------------------- */
@@ -328,10 +421,15 @@ p {
   .main-home {
     padding: 0 4rem;
   }
-  .home-imagen-principal {
-    display: block;
+  .imagenprincipal {
     width: 50%;
-    opacity: 60%;
+  }
+  .home-imagen-principal {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    opacity: 70%;
+    border-radius: 0 0 50% 50%;
   }
   .accion {
     width: 50%;
@@ -341,6 +439,25 @@ p {
   }
   .accion p {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1279px) {
+  .accion {
+    width: 45%;
+  }
+  .accion h1 {
+    font-size: 3rem;
+  }
+  .accion p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+  .imagenprincipal {
+    width: 40%;
+  }
+  .home-imagen-principal {
+    width: 80%;
   }
 }
 
@@ -402,5 +519,10 @@ p {
   }
   .accion-portafolio p {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 1279px) {
+  .container {
+    height: 170vh;
   }
 }

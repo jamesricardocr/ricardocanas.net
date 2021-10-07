@@ -4,7 +4,6 @@ import "animate.css";
 
 import Portafolio from './components/Portafolio';
 import Home from './components/Home';
-import logosti from './img/logosti.png'
 import Laborales from './components/Laborales';
 import Academicos from './components/Academicos';
 import Personales from './components/Personales';
@@ -14,8 +13,6 @@ import Diseños from './components/Diseños';
 function App() {
   return (
     <Fragment>
-        <img className="logosti" src={logosti} alt="Logos tecnologias TI" />
-
         <Router>
           <Switch>
             <Route exact path='/' component= {Home}/>

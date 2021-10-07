@@ -5,10 +5,8 @@ import Contacto from "./subcomponents/Contacto";
 import Redes from "./subcomponents/Redes";
 import Menu from "./subcomponents/Menu";
 
-
 /* -------------------------------- imagenes -------------------------------- */
-import ricardo from '../img/yo.png'
-
+import ricardo from "../img/yo.png";
 
 const Home = () => {
   let mensajePrincipal =
@@ -24,12 +22,18 @@ const Home = () => {
           <Logo />
         </div>
         <div className="main-home">
-        <Accion
-          key="1"
-          mensajePrincipal={mensajePrincipal}
-          mensajeSecundario={mensajeSecundario}
-        />
-        <img className="home-imagen-principal" src={ricardo} alt="Ricardo Cañas" />
+          <Accion
+            key="1"
+            mensajePrincipal={mensajePrincipal}
+            mensajeSecundario={mensajeSecundario}
+          />
+          <div className="imagenprincipal">
+            <img
+              className="home-imagen-principal"
+              src={ricardo}
+              alt="Ricardo Cañas"
+            />
+          </div>
         </div>
         <Contacto />
         <Redes />

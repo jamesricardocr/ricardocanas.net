@@ -4,6 +4,7 @@ import MostrarProyectos from "./subcomponents/MostrarProyectos";
 import Logo from "./subcomponents/Logo";
 import AccionPortafolio from "./subcomponents/AccionPortafolio";
 import Redes from "./subcomponents/Redes";
+import Menu from "./subcomponents/Menu";
 
 // imagenes de los proyectos
 import tacticos from "../img/imagenes-proyectos/tacticosJhon.png";
@@ -77,7 +78,10 @@ const Laborales = () => {
   const mensaje = "En esta sección encuentras todos mis proyectos laborales.";
   return (
     <Fragment>
-      <Logo />
+      <div className="header">
+        <Menu />
+        <Logo />
+      </div>
       <AccionPortafolio mensaje={mensaje} />
       {proyectos.map((proyecto) => (
         <MostrarProyectos key={proyecto.id} proyecto={proyecto} />
