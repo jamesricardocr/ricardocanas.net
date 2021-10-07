@@ -68,7 +68,8 @@ p {
 }
 .menu-listado {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  justify-content: flex-start;
 }
 .menu-listado li {
   list-style: none;
@@ -113,14 +114,7 @@ p {
     transition: 0.5s all;
     text-align: center;
   }
-  .menu-listado li a:hover {
-    padding: 0.6rem;
-    background-color: #4d2559;
-    color: #fff;
-    font-weight: 300;
-    border-radius: 0.6rem;
-    font-size: 1.1rem;
-  }
+
 }
 /* ---------------------------------- Redes --------------------------------- */
 .redes {
@@ -171,8 +165,8 @@ p {
   width: 100%;
 }
 
-.Whatsapp,
-.Portafolio,
+.btn-whatsapp-home,
+.btn-portafolio-home,
 .laborales,
 .academicos,
 .personales,
@@ -188,14 +182,14 @@ p {
   text-align: center;
 }
 
-.Whatsapp {
+.btn-whatsapp-home {
   background-color: #34bf98;
   cursor: pointer;
   line-height: 2;
 }
 
 /* Este es el boton portafolio del home*/
-.Portafolio {
+.btn-portafolio-home {
   line-height: 2;
   background-color: #f19580;
 }
@@ -218,8 +212,8 @@ p {
 }
 
 @media (min-width: 1279px) {
-  .Whatsapp,
-  .Portafolio {
+  .btn-whatsapp-home,
+  .btn-portafolio-home {
     width: 40%;
     line-height: 2;
     font-size: 1.3rem;
@@ -227,14 +221,24 @@ p {
     padding: 0.3rem;
     transition: 1s all;
   }
-  .Whatsapp:hover,
-  .Portafolio:hover {
-    background-color: #4d2559;
-    color: #fff;
-    
+  .btn-whatsapp-home:hover,
+  .btn-portafolio-home:hover {
+    /* background-color: #4d2559; */
+    /* color: #fff; */
+    transform: scale(1.1);
   }
-
-  /* Este es el boton portafolio del home*/
+  
+  #whatsapp-portafolio {
+    width: 50%;
+    padding: 0.3rem;
+    font-size: 1.4rem;
+    transition: 1s all;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  #whatsapp-portafolio:hover {
+    transform: scale(1.1);
+  }
 }
 
 /* -------------------------------- CONTACTO -------------------------------- */
@@ -263,7 +267,7 @@ p {
   color: #34bf98;
   padding: 0.8rem 0;
   border: solid 0.1rem #f19580;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   width: 15rem;
 }
 
@@ -298,6 +302,10 @@ p {
     font-size: 3rem;
     margin: 2rem;
   }
+  .formulario-contacto{
+    gap: 2.5rem;
+  }
+
   .formulario-contacto,
   .formulario-contacto input {
     width: 25rem;
@@ -521,8 +529,84 @@ p {
     font-size: 1.5rem;
   }
 }
+
 @media (min-width: 1279px) {
   .container {
-    height: 170vh;
+    height: 180vh;
   }
+
+  .container-portafolio {
+    height: 100vh;
+  }
+
+  .container-main-portafolio {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .accion-portafolio {
+    width: 60%;
+
+  }
+  .accion-portafolio h1 {
+    font-size: 3.5rem;
+  }
+  .accion-portafolio p {
+    font-size: 1.5rem;
+  }
+
+  .btn-portafolio {
+    width: 40%;
+  }
+  .laborales,
+  .academicos,
+  .personales,
+  .diseños {
+    width: 60%;
+    transition: 1s all;
+  }
+  .laborales:hover,
+  .academicos:hover,
+  .personales:hover,
+  .diseños:hover {
+    transform: scale(1.1);
+  }
+
+  .container-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3rem auto;
+  }
+  .proyectos{
+    width: 48%;
+  }
+  .datos-proyecto h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 Animaciones                                */
+/* -------------------------------------------------------------------------- */
+
+.animar{
+  transition: 1s all;
+}
+
+.animar:hover{
+  transform: scale(1.05);
+}
+.animar-dos{
+  transition: 1s all;
+}
+
+.animar-dos:hover{
+  transform: scale(1.2);
+  background-color: #4D2559;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }

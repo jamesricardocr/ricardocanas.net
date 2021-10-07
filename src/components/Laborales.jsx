@@ -83,9 +83,11 @@ const Laborales = () => {
         <Logo />
       </div>
       <AccionPortafolio mensaje={mensaje} />
-      {proyectos.map((proyecto) => (
-        <MostrarProyectos key={proyecto.id} proyecto={proyecto} />
-      ))}
+      <div className="container-proyectos">
+        {proyectos.map((proyecto) => (
+          <MostrarProyectos key={proyecto.id} proyecto={proyecto} />
+        ))}
+      </div>
       <br />
       <Redes />
     </Fragment>

@@ -15,12 +15,13 @@ const Accion = ({mensajePrincipal, mensajeSecundario}) => {
                 <div className="botones">
                 
                 <p 
-                className="Whatsapp redes animate__animated animate__pulse" 
+                className="btn-whatsapp-home " 
                 onClick = {()=> enviarWhatsapp()}
                 >Whatsapp</p>
         
-                <Link 
-                className="Portafolio redes animate__animated animate__pulse" 
+                <Link
+                
+                className="btn-portafolio-home " 
                 to ="/Portafolio" 
                 >Portafolio</Link>
                 </div>

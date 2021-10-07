@@ -8,16 +8,16 @@ const MostrarProyectos = ({proyecto}) => {
 
     
     return (
-         
+        // animate__animated animate__slideInLeft
         <Fragment>
-            <div className="proyectos animate__animated animate__slideInLeft">
+            <div className="proyectos animar ">
                 <div className="imagen-proyecto">
-                    <a className="link" href={imagen} target="_blank"><img src={imagen} alt="" /></a> 
+                    <a  href={imagen} target="_blank"><img src={imagen} alt="" /></a> 
                 </div>
                 <div className="datos-proyecto">
-                    <a className="link" href={url} target="_blank"><h2 className="titulo-proyecto">{nombre}</h2></a>
+                    <a  href={url} target="_blank"><h2 className="titulo-proyecto">{nombre}</h2></a>
                     <p className="descripcion">{descripcion}</p>
-                    <a className="link" href={url} target="_blank">Ver Proyecto</a>
+                    <a  href={url} target="_blank">Ver Proyecto</a>
                     <div className="logos-proyecto">
                         {tecnologias.map(tecnologia =>(
                             <img src={tecnologia} alt="" />
